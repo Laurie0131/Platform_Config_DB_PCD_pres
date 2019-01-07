@@ -134,14 +134,20 @@ Note:
 @snapend
 
 
-@snap[north span-35]
+@snap[north span-30]
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 @box[bg-green-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > Dynamic</span></p>)
 @snapend
 
 
-@snap[north-east span-35]
+@snap[north-east span-30]
+<br>
+<br>
 <br>
 <br>
 @box[bg-green-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > DynamicEx</span></p>)
@@ -149,16 +155,26 @@ Note:
 
 
 
-@snap[south-west span-35]
+@snap[south-west span-30]
 @box[bg-green-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > DynamicHii</span></p>)
+<br>
+<br>
+<br>
+<br>
 @snapend
 
-@snap[south span-35]
+@snap[south span-30]
 @box[bg-green-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > DynamicVpd</span></p>)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 @snapend
 
 
-@snap[west span-35]
+@snap[west span-40]
 @box[bg-purple-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > PatchableInModule</span></p>)
 @snapend
 
