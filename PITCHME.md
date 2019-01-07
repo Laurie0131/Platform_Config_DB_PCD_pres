@@ -178,19 +178,19 @@ Note:
 
 
 @snap[south-west span-100]
-@box[bg-navy text-white rounded  my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em;" > Syntax Examples<br></span><span style="font-size:0.50em;" >`[pcdsFeatureFlag.common] [pcdsFixedAtBuild.IA32]`<br>&nbsp;<br>&nbsp;</span></p>)
+@box[bg-navy text-white rounded  my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-weight: bold;" > Syntax Examples<br></span><span style="font-size:0.50em;" >`[pcdsFeatureFlag.common] [pcdsFixedAtBuild.IA32]`<br>&nbsp;<br>&nbsp;</span></p>)
 @snapend
 
 
 
 @snap[south-west span-100]
-@box[bg-navy text-white rounded  my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em;" > Syntax Examples<br></span><span style="font-size:0.50em;" >`[pcdsFeatureFlag.common] [pcdsFixedAtBuild.`@color[yellow](`IA32]`)<br>&nbsp;<br>&nbsp;</span></p>)
+@box[bg-navy text-white rounded  my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-weight: bold;" > Syntax Examples<br></span><span style="font-size:0.50em;" >`[pcdsFeatureFlag.common] [pcdsFixedAtBuild.`@color[yellow](`IA32]`)<br>&nbsp;<br>&nbsp;</span></p>)
 @snapend
 
 
 
 @snap[south-west span-100]
-@box[bg-navy text-white rounded  my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em;" > Syntax Examples<br></span><span style="font-size:0.50em;" >`[pcdsFeatureFlag.common] [pcdsFixedAtBuild.IA32]`<br>`[PcdsFixedAtBuild, PcdsPatchableInModule, PcdsDynamic, PcdsDynamicEx]`<br>&nbsp;</span></p>)
+@box[bg-navy text-white rounded  my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-weight: bold;" > Syntax Examples<br></span><span style="font-size:0.50em;" >`[pcdsFeatureFlag.common] [pcdsFixedAtBuild.IA32]`<br>`[PcdsFixedAtBuild, PcdsPatchableInModule, PcdsDynamic, PcdsDynamicEx]`<br>&nbsp;</span></p>)
 @snapend
 
 
