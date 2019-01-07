@@ -54,7 +54,7 @@ Note:
 </ul>
 
 ---?image=assets/images/binary-strings-black2.jpg
-@title[Modules Overview Section]
+@title[PCD Overview Section]
 <br><br><br><br><br><br><br>
 ### <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PCD Overview</span>
 <span style="font-size:0.9em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -119,6 +119,65 @@ Note:
 @[2-13]( See Link above to view the entire documentation)
 
 Note:
+
+---
+@title[PCD Types]
+### <p align="right"><span class="gold" >PCD Types</span></p>
+@snap[east span-35]
+@box[bg-lt-blue-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > FeatureFlag</span></p>)
+@snapend
+
+@snap[north-west span-35]
+<br>
+<br>
+@box[bg-yellow text-blue rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > FixedAtBuild</span></p>)
+@snapend
+
+
+@snap[north span-35]
+<br>
+<br>
+@box[bg-green-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > Dynamic</span></p>)
+@snapend
+
+
+@snap[north-east span-35]
+<br>
+<br>
+@box[bg-green-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > DynamicEx</span></p>)
+@snapend
+
+
+
+@snap[south-west span-35]
+@box[bg-green-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > DynamicHii</span></p>)
+@snapend
+
+@snap[south span-35]
+@box[bg-green-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > DynamicVpd</span></p>)
+@snapend
+
+
+@snap[west span-35]
+@box[bg-purple-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > PatchableInModule</span></p>)
+@snapend
+
+
+
+Note:
+
+#### FeatureFlag 
+- Replaces a switch MACRO to enable/disable a feature (TRUE or FALSE)
+#### FixedAtBuild
+- Replaces a macro that produced a customizable value
+- Value of this PCD type is determined at build time and is stored in the code section of a module’s PE image 
+#### PatchableInModule
+- Value is stored in the data section, rather than the code section, of the module’s PE image. 
+#### Dynamic / DyanmicEx / DynamicHii / DynamicVpd
+- Value is assigned by one module and is accessed by other modules in execution time 
+#### Syntax Examples
+- 	[pcdsFeatureFlag.common] [pcdsFixedAtBuild.IA32] [pcdsFixedAtBuild.X64]   [pcdsFixedAtBuild.IPF] [pcdsFixedAtBuild.EBC]   [pcdsDynamic.IA32] [pcdsDynamicEx.X64] 
+
 
 ---?image=/assets/images/slides/Slide4.JPG
 <!-- .slide: data-transition="none" -->
