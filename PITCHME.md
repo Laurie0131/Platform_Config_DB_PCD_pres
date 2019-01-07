@@ -125,6 +125,7 @@ Note:
 ### <p align="right"><span class="gold" >PCD Types</span></p>
 @snap[east span-35]
 @box[bg-lt-blue-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > FeatureFlag</span></p>)
+<br>
 @snapend
 
 @snap[north-west span-35]
@@ -157,10 +158,12 @@ Note:
 <br>
 <br>
 <br>
+<br>
 @snapend
 
-@snap[south span-30]
+@snap[south-east span-30]
 @box[bg-green-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > DynamicVpd</span></p>)
+<br>
 <br>
 <br>
 <br>
@@ -170,6 +173,7 @@ Note:
 
 @snap[west span-40]
 @box[bg-purple-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > PatchableInModule</span></p>)
+<br>
 @snapend
 
 
