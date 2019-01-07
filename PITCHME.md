@@ -324,14 +324,14 @@ Note:
 <br>
 @snapend
 
-@snap[west span-30 Fragment]
+@snap[midpoint span-30 Fragment]
 <p align="center"><span style="font-size:0.9em">@color[yellow](.INF)</span></p>
 @box[bg-green-pp text-black waved my-box-pad  ](<span style="font-size:0.80em; font-weight: bold;" >Reference PCD</span>)
 <br>
 @snapend
 
 
-@snap[west span-30 Fragment]
+@snap[east span-30 Fragment]
 <p align="center"><span style="font-size:0.9em">@color[yellow](.DSC)</span></p>
 @box[bg-lt-blue-pp text-black waved my-box-pad  ](<span style="font-size:0.80em; font-weight: bold;" >Modify PCD</span>)
 <br>
