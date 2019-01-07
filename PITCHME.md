@@ -321,7 +321,7 @@ Note:
 @snap[west span-30 fragment]
 <br>
 <br>
-<p align="center"><span style="font-size:0.9em; font-weight: bold;">@color[yellow](.DEC)</span></p>
+<p align="center"><span style="font-size:01.49em; font-weight: bold;">@color[yellow](.DEC)</span></p>
 @box[bg-gold2 text-black waved  ](<span style="font-size:01.280em; font-weight: bold;" >Define <br>PCD</span>)
 <br>
 @snapend
@@ -329,7 +329,7 @@ Note:
 @snap[midpoint span-30 fragment]
 <br>
 <br>
-<p align="center"><span style="font-size:0.9em; font-weight: bold;">@color[yellow](.INF)</span></p>
+<p align="center"><span style="font-size:01.49em; font-weight: bold;">@color[yellow](.INF)</span></p>
 @box[bg-green-pp text-black waved   ](<span style="font-size:01.280em; font-weight: bold;" >Reference PCD</span>)
 <br>
 @snapend
@@ -338,7 +338,7 @@ Note:
 @snap[east span-30 fragment]
 <br>
 <br>
-<p align="center"><span style="font-size:0.9em; font-weight: bold;">@color[yellow](.DSC)</span></p>
+<p align="center"><span style="font-size:01.49em; font-weight: bold;">@color[yellow](.DSC)</span></p>
 @box[bg-lt-blue-pp text-black waved  ](<span style="font-size:01.280em; font-weight: bold;" >Modify <br>PCD</span>)
 <br>
 @snapend
