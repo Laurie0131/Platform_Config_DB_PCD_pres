@@ -319,21 +319,24 @@ Note:
 <span style="font-size:0.9em"><font color="yellow">PCDs can be located anywhere within the Workspace even though a different package will use those PCDs for a given project</font></span>
 
 @snap[west span-30 fragment]
-<p align="center"><span style="font-size:0.9em">@color[yellow](.DEC)</span></p>
-@box[bg-gold2 text-black waved  ](<span style="font-size:0.80em; font-weight: bold;" >Define PCD</span>)
+<br>
+<p align="center"><span style="font-size:0.9em; font-weight: bold;">@color[yellow](.DEC)</span></p>
+@box[bg-gold2 text-black waved  ](<span style="font-size:01.280em; font-weight: bold;" >Define PCD</span>)
 <br>
 @snapend
 
 @snap[midpoint span-30 fragment]
-<p align="center"><span style="font-size:0.9em">@color[yellow](.INF)</span></p>
-@box[bg-green-pp text-black waved   ](<span style="font-size:0.80em; font-weight: bold;" ><b>Reference PCD</b></span>)
+<br>
+<p align="center"><span style="font-size:0.9em; font-weight: bold;">@color[yellow](.INF)</span></p>
+@box[bg-green-pp text-black waved   ](<span style="font-size:01.280em; font-weight: bold;" >Reference PCD</span>)
 <br>
 @snapend
 
 
 @snap[east span-30 fragment]
-<p align="center"><span style="font-size:0.9em">@color[yellow](.DSC)</span></p>
-@box[bg-lt-blue-pp text-black waved  ](<span style="font-size:0.80em; font-weight: bold;" >Modify PCD</span>)
+<br>
+<p align="center"><span style="font-size:0.9em; font-weight: bold;">@color[yellow](.DSC)</span></p>
+@box[bg-lt-blue-pp text-black waved  ](<span style="font-size:01.280em; font-weight: bold;" >Modify PCD</span>)
 <br>
 @snapend
 
