@@ -139,15 +139,11 @@ Note:
 <br>
 <br>
 <br>
-<br>
-<br>
 @box[bg-green-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > Dynamic</span></p>)
 @snapend
 
 
 @snap[north-east span-30]
-<br>
-<br>
 <br>
 <br>
 @box[bg-green-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > DynamicEx</span></p>)
@@ -165,8 +161,6 @@ Note:
 
 @snap[south span-30]
 @box[bg-green-pp text-white rounded my-box-pad fragment ](<p style="line-height:80%" ><span style="font-size:0.80em; font-family: Courier New; font-weight: bold;" > DynamicVpd</span></p>)
-<br>
-<br>
 <br>
 <br>
 <br>
