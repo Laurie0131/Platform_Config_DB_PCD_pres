@@ -668,8 +668,7 @@ Note:
 <br>
 <br>
 <br>
-<br>
-<p align="left" style="line-height:80%"><span style="font-size:01.9em; ">@color[#87E2A9](<b>Autogen.h</b>)</span></p>
+<p align="left" style="line-height:80%"><span style="font-size:01.25em; ">@color[#87E2A9](<b>Autogen.h</b>)</span></p>
 @box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;&num;define _PCD_TOKEN_PcdMaxVariableSize  250U<br>&nbsp;&nbsp;&num;define _PCD_SIZE_PcdMaxVariableSize 4<br>&nbsp;&nbsp;&num;define _PCD_GET_MODE_SIZE_PcdMaxVariableSize  _PCD_SIZE_PcdMaxVariableSize <br>&nbsp;&nbsp;&num;define _PCD_VALUE_PcdMaxVariableSize<span style="background-color: yellow";>@color[green](&nbsp;&nbsp;  0x8400U)&nbsp;&nbsp;</span><br>&nbsp;&nbsp;extern const  UINT32  _gPcd_FixedAtBuild_PcdMaxVariableSize;<br>&nbsp;&nbsp;&num;define _PCD_GET_MODE_32_PcdMaxVariableSize  _gPcd_FixedAtBuild_PcdMaxVariableSize<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
@@ -685,18 +684,13 @@ Note:
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p align="left" style="line-height:80%"><span style="font-size:01.9em; ">@color[#00ffff](<b>Autogen.c</b>)</span></p>
+<p align="left" style="line-height:80%"><span style="font-size:01.25em; ">@color[#00b0f0](<b>Autogen.c</b>)</span></p>
 @box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;// Definition of PCDs used in this module<br>&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](• • •) <br>&nbsp;&nbsp;GLOBAL_REMOVE_IF_UNREFERENCED const UINT32  \<br>&nbsp;&nbsp;&nbsp;&nbsp;_gPcd_FixedAtBuild_PcdMaxVariableSize = _PCD_VALUE_<span style="background-color: yellow";>@color[red](&nbsp;&nbsp;PcdMaxVariableSize;)&nbsp;&nbsp;</span><br>&nbsp;&nbsp;</span></p>)
 
 @snapend
 
 
-Note
+Note:
 
 ---?image=/assets/images/slides/Slide45.JPG
 @title[Fixed PCD AutoGen files]
