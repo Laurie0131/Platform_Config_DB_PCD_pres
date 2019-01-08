@@ -531,7 +531,7 @@ Note:
 <br>
 <br>
 @color[yellow](Used)</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;MdeModulePkg\Universal\Variable\RuntimeDxe\Variable.c  // max NV variable size <br>&nbsp;&nbsp;mVariableModuleGlobal->MaxVariableSize = PcdGet32 (@color[red](PcdMaxVariableSize));<br>&nbsp;&nbsp;</span></p>)
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;MdeModulePkg/Universal/Variable/RuntimeDxe/Variable.c  // max NV variable size <br>&nbsp;&nbsp;mVariableModuleGlobal->MaxVariableSize = PcdGet32 (@color[red](PcdMaxVariableSize));<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
 
