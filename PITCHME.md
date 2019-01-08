@@ -705,7 +705,7 @@ Note:
 </ul>
 <br>
 <br>
-<p style="line-height:80%"><span style="font-size:0.8em">Example:  Use the variable  <font color="yellow">`PcdPlatformBootTimeOut`</font> defined for the platform time in seconds before booting, modified for a value of <font color="cyan">`03` </font> seconds</span></p>
+<p style="line-height:80%"><span style="font-size:0.8em">Example: &nbsp; Use the variable  <font color="yellow">`PcdPlatformBootTimeOut`</font> defined for the platform time in seconds before booting, modified for a value of <font color="cyan">`03` </font> seconds</span></p>
 
 
 Note:
@@ -737,7 +737,7 @@ Slide says it all
 <br>
 <br>
 <br>@color[yellow](Modified)</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;[PcdsDynamicDefault]<br>&nbsp;gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|@color[green](03)<br>&nbsp;&nbsp;</span></p>)
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;[PcdsDynamicDefault]<br>&nbsp;gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|<font color="cyan">`03` </font><br>&nbsp;&nbsp;</span></p>)
 @snapend
 
 
@@ -804,7 +804,7 @@ Slide says it all
 <br>
 <br>
 <br>@color[yellow](Modified)</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;[PcdsDynamicDefault]<br>&nbsp;gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|<span style="background-color: yellow";>@color[green](03)&nbsp;</span><br>&nbsp;&nbsp;</span></p>)
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;[PcdsDynamicDefault]<br>&nbsp;gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|<span style="background-color: yellow";><font color="cyan">`03` </font>&nbsp;</span><br>&nbsp;&nbsp;</span></p>)
 @snapend
 
 
@@ -853,7 +853,7 @@ Note:
 <br>
 <p align="left" style="line-height:60%"><span style="font-size:0.9em; "><br>@color[yellow](Example Module:)</span><span style="font-size:0.5em; ">&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](MdeModulePkg/Universal/PCD/Dxe/Pcd) </span><br>
 <span style="font-size:0.8em; ">@color[#00b0f0](<b>Autogen.c</b>)</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:35%" align="left"><span style="font-size:0.4250em; font-family:Consolas; " >&nbsp;&nbsp;DXE_PCD_DATABASE_INIT @color[red](gDXEPcdDbInit) = { <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)&nbsp;&nbsp;&nbsp;&nbsp; /&ast; LocalTokenNumberTable &ast;/&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp; offsetof&lpar;DXE_PCD_DATABASE, Init.@color[red](PcdPlatformBootTimeOut)&lowbar;&ast;<sup>1</sup>&rpar; | PCD_TYPE_DATA | <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PCD_DATUM_TYPE_UINT16,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp;&nbsp; <font color="green">{ 0x3U } </font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&sol;&ast;  <font color="red">PcdPlatformBootTimeOut</font> &lowbar;&ast;<sup>1</sup> [1] &ast;/,<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;</span></p>)
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:35%" align="left"><span style="font-size:0.4250em; font-family:Consolas; " >&nbsp;&nbsp;DXE_PCD_DATABASE_INIT @color[red](gDXEPcdDbInit) = { <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)&nbsp;&nbsp;&nbsp;&nbsp; /&ast; LocalTokenNumberTable &ast;/&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp; offsetof&lpar;DXE_PCD_DATABASE, Init.@color[red](PcdPlatformBootTimeOut)&lowbar;&ast;<sup>1</sup>&rpar; | PCD_TYPE_DATA | <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PCD_DATUM_TYPE_UINT16,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp;&nbsp; <font color="cyan">`0x3U` </font> </font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&sol;&ast;  <font color="red">PcdPlatformBootTimeOut</font> &lowbar;&ast;<sup>1</sup> [1] &ast;/,<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;</span></p>)
 
 @snapend
 
@@ -870,7 +870,7 @@ Note:
 <br>
 <p align="left" style="line-height:60%"><span style="font-size:0.9em; "><br>@color[yellow](Example Module:)</span><span style="font-size:0.5em; ">&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](MdeModulePkg/Universal/PCD/Dxe/Pcd) </span><br>
 <span style="font-size:0.8em; ">@color[#00b0f0](<b>Autogen.c</b>)</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:35%" align="left"><span style="font-size:0.4250em; font-family:Consolas; " >&nbsp;&nbsp;DXE_PCD_DATABASE_INIT <span style="background-color: white";>@color[red](gDXEPcdDbInit)</span> = { <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)&nbsp;&nbsp;&nbsp;&nbsp; /&ast; LocalTokenNumberTable &ast;/&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp; offsetof&lpar;DXE_PCD_DATABASE, Init.@color[red](PcdPlatformBootTimeOut)&lowbar;&ast;<sup>1</sup>&rpar; | PCD_TYPE_DATA | <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PCD_DATUM_TYPE_UINT16,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp;&nbsp; <span style="background-color: yellow";><font color="green">{ 0x3U } </font>&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&sol;&ast;  <font color="red">PcdPlatformBootTimeOut</font> &lowbar;&ast;<sup>1</sup> [1] &ast;/,<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;</span></p>)
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:35%" align="left"><span style="font-size:0.4250em; font-family:Consolas; " >&nbsp;&nbsp;DXE_PCD_DATABASE_INIT <span style="background-color: white";>@color[red](gDXEPcdDbInit)</span> = { <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)&nbsp;&nbsp;&nbsp;&nbsp; /&ast; LocalTokenNumberTable &ast;/&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp; offsetof&lpar;DXE_PCD_DATABASE, Init.@color[red](PcdPlatformBootTimeOut)&lowbar;&ast;<sup>1</sup>&rpar; | PCD_TYPE_DATA | <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PCD_DATUM_TYPE_UINT16,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp;&nbsp; <span style="background-color: yellow";><font color="cyan">`0x3U` </font>&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&sol;&ast;  <font color="red">PcdPlatformBootTimeOut</font> &lowbar;&ast;<sup>1</sup> [1] &ast;/,<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;</span></p>)
 
 @snapend
 
@@ -902,78 +902,6 @@ Note:
    - Also the AutoGen files do not need to be reviewed since the work is done by the build tools.
 
 
----?image=/assets/images/slides/Slide54.JPG
-<!-- .slide: data-transition="none" -->
-@title[Dynamic PCD AutoGen files]
-### <p align="right"><span class="gold" >Dynamic PCD AutoGen files</span></p>
-
-Note:
-
-- The Module that uses the variable only has lib references to get/set the variable
-- The Variable is stored in the PCD Data Base with the Driver for  the PCD manager.
-- Key take away:
--   PCD act like global variables and they should only be modified at the Project level
-   - Also the AutoGen files do not need to be reviewed since the work is done by the build tools.
-
-
-+++?image=/assets/images/slides/Slide55.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Dynamic PCD AutoGen files 02]
-### <p align="right"><span class="gold" >Dynamic PCD AutoGen files</span></p>
-
-Note:
-
-- The Module that uses the variable only has lib references to get/set the variable
-- The Variable is stored in the PCD Data Base with the Driver for  the PCD manager.
-- Key take away:
--   PCD act like global variables and they should only be modified at the Project level
-   - Also the AutoGen files do not need to be reviewed since the work is done by the build tools.
-
-
-+++?image=/assets/images/slides/Slide56.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Dynamic PCD AutoGen files 03]
-### <p align="right"><span class="gold" >Dynamic PCD AutoGen files</span></p>
-
-Note:
-
-- The Module that uses the variable only has lib references to get/set the variable
-- The Variable is stored in the PCD Data Base with the Driver for  the PCD manager.
-- Key take away:
--   PCD act like global variables and they should only be modified at the Project level
-   - Also the AutoGen files do not need to be reviewed since the work is done by the build tools.
-
-
-+++?image=/assets/images/slides/Slide57.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Dynamic PCD AutoGen files 04]
-### <p align="right"><span class="gold" >Dynamic PCD AutoGen files</span></p>
-
-Note:
-
-- The Module that uses the variable only has lib references to get/set the variable
-- The Variable is stored in the PCD Data Base with the Driver for  the PCD manager.
-- Key take away:
--   PCD act like global variables and they should only be modified at the Project level
-   - Also the AutoGen files do not need to be reviewed since the work is done by the build tools.
-
-
-+++?image=/assets/images/slides/Slide58.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Dynamic PCD AutoGen files 05]
-### <p align="right"><span class="gold" >Dynamic PCD AutoGen files</span></p>
-
-Note:
-
-- The Module that uses the variable only has lib references to get/set the variable
-- The Variable is stored in the PCD Data Base with the Driver for  the PCD manager.
-- Key take away:
--   PCD act like global variables and they should only be modified at the Project level
-   - Also the AutoGen files do not need to be reviewed since the work is done by the build tools.
 
 
 ---  
