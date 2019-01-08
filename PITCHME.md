@@ -692,17 +692,11 @@ Note:
 
 Note:
 
----?image=/assets/images/slides/Slide45.JPG
-@title[Fixed PCD AutoGen files]
-<p align="right"><span class="gold" ><b>Fixed PCD AutoGen files</b></span></p>
-<span style="font-size:0.8em">Example: </span>@fa[github gp-bullet-gold]<span style="font-size:0.5em">&nbsp;&nbsp;<a href="https://github.com/tianocore/edk2/blob/master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmmRuntimeDxe.inf "> MdeModulePkg\Universal\Variable\RuntimeDxe\VariableRuntimeDxe</a> </span>
-
-Note:
 
 ---
 @title[What about a Dynamic PCD]
 <br>
-<p align="left"><span style="font-size:01.2em"><font color="#e49436">What about a Dynamic PCDs?</font></span></p>
+<p align="left"><span style="font-size:01.2em"><font color="#e49436"><b>What about a Dynamic PCDs?</b></font></span></p>
 <br>
 <ul style="list-style-type:disc">
  <li><span style="font-size:0.9em">Only can be <b>Set</b> and changed during Boot time. </span> </li>
@@ -711,12 +705,103 @@ Note:
 </ul>
 <br>
 <br>
-<span style="font-size:0.7em">Example:  Use the variable  <font color="yellow">`PcdPlatformBootTimeOut`</font> defined for the platform time in seconds before booting, modified for a value of <font color="cyan">`03` </font> seconds</span>
+<p style="line-height:80%"><span style="font-size:0.8em">Example:  Use the variable  <font color="yellow">`PcdPlatformBootTimeOut`</font> defined for the platform time in seconds before booting, modified for a value of <font color="cyan">`03` </font> seconds</span></p>
 
 
 Note:
 
 Slide says it all
+
+---?image=/assets/images/slides/Slide26_1.JPG
+@title[Dynamic PCD]
+### <p align="right"><span class="gold" >Dynamic PCD</span></p>
+
+
+@snap[north-east span-90 fragment]
+<p align="left" style="line-height:40%"><span style="font-size:0.9em; ">
+<br>
+<br>
+@color[yellow](Defined)</span></p>
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsDynamic]<br>&nbsp;&nbsp;
+gEfiIntelFrameworkModulePkgTokenSpaceGuid.@color[red](PcdPlatformBootTimeOut)|0xffff|UINT16|0x
+<br>&nbsp;&nbsp;</span></p>)
+@snapend
+
+@snap[north-east span-90 fragment]
+<br>
+<p align="left" style="line-height:40%"><span style="font-size:0.9em; ">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>@color[yellow](Modified)</span></p>
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsDynamicDefault]<br>&nbsp;&nbsp;
+gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)  &num;&num; CONSUMES
+gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|@color[green](03)
+<br>&nbsp;&nbsp;</span></p>)
+@snapend
+
+
+@snap[north-east span-90 fragment]
+<br>
+<br>
+<br>
+<p align="left" style="line-height:40%"><span style="font-size:0.9em; "><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>@color[yellow](Setting)</span></p>
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsFixedAtBuild]<br>&nbsp;&nbsp;@color[yellow](IntelFrameworkModulePkg/Universal/BdsDxe/BootMaint/BootMaint.c)<br>&nbsp;&nbsp;PcdSet16 &lpar;@color[red](PcdPlatformBootTimeOut),<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  NewBmmData->BootTimeOut&rpar;;<br>&nbsp;&nbsp;</span></p>)
+@snapend
+
+
+@snap[north-east span-90 fragment]
+<br>
+<br>
+<br>
+<br>
+<p align="left" style="line-height:40%"><span style="font-size:0.9em; "><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+@color[yellow](Used)</span></p>
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;@color[yellow](OvmfPkg\Library\PlatformBootManagerLib\BdsPlatform.c)<br>&nbsp;&nbsp;&nbsp;&nbsp;Timeout = PcdGet16 &lpar;@color[red](PcdPlatformBootTimeOut)&lpar;;<br>&nbsp;&nbsp;</span></p>)
+<br>
+@snapend
+
+
+
+
+
+Note:
 
 ---?image=/assets/images/slides/Slide48.JPG
 <!-- .slide: data-transition="none" -->
