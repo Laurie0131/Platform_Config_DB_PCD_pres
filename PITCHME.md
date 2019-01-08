@@ -321,9 +321,10 @@ Note:
 ---
 @title[PCD Syntax]
 ### <p align="right"><span class="gold" >PCD Syntax</span></p>
-<span style="font-size:0.9em"><font color="yellow">PCDs can be located anywhere within the Workspace even though a different package will use those PCDs for a given project</font></span>
+<span style="font-size:0.9em"><font color="white">PCDs can be located anywhere within the Workspace even though a different package will use those PCDs for a given project</font></span>
 
 @snap[west span-30 fragment]
+<br>
 <br>
 <br>
 <p align="center"><span style="font-size:01.49em; font-weight: bold;">@color[yellow](.DEC)</span></p>
@@ -334,6 +335,7 @@ Note:
 @snap[midpoint span-30 fragment]
 <br>
 <br>
+<br>
 <p align="center"><span style="font-size:01.49em; font-weight: bold;">@color[yellow](.INF)</span></p>
 @box[bg-green-pp text-black waved   ](<span style="font-size:01.280em; font-weight: bold;" >Reference PCD</span>)
 <br>
@@ -341,6 +343,7 @@ Note:
 
 
 @snap[east span-30 fragment]
+<br>
 <br>
 <br>
 <p align="center"><span style="font-size:01.49em; font-weight: bold;">@color[yellow](.DSC)</span></p>
