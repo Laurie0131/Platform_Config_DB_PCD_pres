@@ -381,59 +381,6 @@ Note:
 - In most cases, PCD entries do not have SKU enabled and have a single value associated with them. However, a SKU PCD entry may have multiple values.
 
 
-
-
-
----?image=/assets/images/slides/Slide21.JPG
-@title[PCD Syntax example]
-### <p align="right"><span class="gold" >PCD Syntax Example</span></p>
-
-@snap[north-east span-90 fragment]
-<br>
-<br>
-<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">PCD defined in the DEC file from any package</span></p>
-<pre>
-```
-  [Guids.common]
-    PcdTokenSpaceGuidName={ 0xXXXXXXXX, 0xXXXX, 0xXXXX, { 0xXX, . . .}}
-        . . .
-  [Pcds...]
-  PcdTokenSpaceGuidName.PcdTokenName|Value[|DatumType[|MaxSize]]|Token
-
-```
-</pre>
-
-@snapend
-
-@snap[east span-90 fragment]
-<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">PCD usage listed in INF file for module</span></p>
-<pre>
-```
-   […Pcd…] 
-     PcdTokenSpaceGuidName.PcdTokenName|[Value]
-
-
-```
-</pre>
-@snapend
-
-@snap[south-east span-90 fragment]
-<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">Value of PCD set in Platform DSC</span></p>
-<pre>
-```
-  [Pcds...]
-     PcdTokenSpaceGuidName.PcdTokenName|Value[|DatumType[|MaximumDatumSize]]
-
-```
-</pre>
-@snapend
-
-
-
-Note:
-
-
-
 ---?image=/assets/images/slides/Slide21.JPG
 @title[PCD Syntax example]
 ### <p align="right"><span class="gold" >PCD Syntax Example</span></p>
@@ -481,65 +428,6 @@ Note:
 
 Note:
 
-
----?image=/assets/images/slides/Slide26.JPG
-@title[PCD Variable example]
-### <p align="right"><span class="gold" >PCD Variable Example</span></p>
-
-@snap[north-east span-90 fragment]
-<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">Defined</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsFixedAtBuild, PcdsPatchableInModule]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)|0x400|UINT32|0x30000003<br>&nbsp;&nbsp;</span></p>)
-<br>
-@snapend
-
-@snap[north-east span-90 fragment]
-<br>
-<br>
-<br>
-<br>
-<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">Referenced</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[Pcd]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)  &num;&num; CONSUMES<br>&nbsp;&nbsp;</span></p>)
-<br>
-@snapend
-
-
-@snap[north-east span-90 fragment]
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">Modified</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsFixedAtBuild]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)|0x@color[green](008400)<br>&nbsp;&nbsp;</span></p>)
-<br>
-@snapend
-
-
-@snap[north-east span-90 fragment]
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">Used</span></p>
-<pre>
-```
-   MdeModulePkg\Universal\Variable\RuntimeDxe\Variable.c // max NV variable size 
-    mVariableModuleGlobal->MaxVariableSize = PcdGet32 (PcdMaxVariableSize);
-  
-```
-</pre>
-@snapend
 
 
 
@@ -648,62 +536,8 @@ Note:
 
 Note:
 
+The value that will get used with the source code will be the value modified in the .dsc file.  This is the preferred way of modifying PCD values from their default values
 
-
-
-
----?image=/assets/images/slides/Slide26.JPG
-<!-- .slide: data-transition="none" -->
-@title[PCD Variable example]
-### <p align="right"><span class="gold" >PCD Variable Example</span></p>
-
-Note:
-
-
-
-+++?image=/assets/images/slides/Slide27.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[PCD Variable example 02]
-### <p align="right"><span class="gold" >PCD Variable Example</span></p>
-
-Note:
-
-
-+++?image=/assets/images/slides/Slide28.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[PCD Variable example 03]
-### <p align="right"><span class="gold" >PCD Variable Example</span></p>
-
-Note:
-
-
-+++?image=/assets/images/slides/Slide29.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[PCD Variable example 04]
-### <p align="right"><span class="gold" >PCD Variable Example</span></p>
-
-Note:
-
-
-+++?image=/assets/images/slides/Slide30.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[PCD Variable example 05]
-### <p align="right"><span class="gold" >PCD Variable Example</span></p>
-
-Note:
-
-
-+++?image=/assets/images/slides/Slide31.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[PCD Variable example 06]
-### <p align="right"><span class="gold" >PCD Variable Example</span></p>
-
-Note:
 
 
 ---?image=/assets/images/slides/Slide33.JPG
