@@ -487,14 +487,12 @@ Note:
 ### <p align="right"><span class="gold" >PCD Variable Example</span></p>
 
 @snap[north-east span-90 fragment]
-<br>
 <p align="left" style="line-height:80%"><span style="font-size:0.9em; ">Defined</span></p>
 @box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsFixedAtBuild, PcdsPatchableInModule]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)|0x400|UINT32|0x30000003<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
 
 @snap[north-east span-90 fragment]
-<br>
 <br>
 <br>
 <br>
