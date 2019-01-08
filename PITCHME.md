@@ -804,7 +804,7 @@ Slide says it all
 <br>
 <br>
 <br>@color[yellow](Modified)</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;[PcdsDynamicDefault]<br>&nbsp;gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|<span style="background-color: gray";>@color[green](03)&nbsp;</span><br>&nbsp;&nbsp;</span></p>)
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;[PcdsDynamicDefault]<br>&nbsp;gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|<span style="background-color: yellow";>@color[green](03)&nbsp;</span><br>&nbsp;&nbsp;</span></p>)
 @snapend
 
 
