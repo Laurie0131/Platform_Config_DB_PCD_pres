@@ -853,9 +853,27 @@ Note:
 <br>
 <p align="left" style="line-height:60%"><span style="font-size:0.9em; "><br>@color[yellow](Example Module:)</span><span style="font-size:0.5em; ">&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](MdeModulePkg/Universal/PCD/Dxe/Pcd) </span><br>
 <span style="font-size:0.8em; ">@color[#00b0f0](<b>Autogen.c</b>)</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:35%" align="left"><span style="font-size:0.4250em; font-family:Consolas; " >&nbsp;&nbsp;DXE_PCD_DATABASE_INIT @color[red](gDXEPcdDbInit) = { <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)&nbsp;&nbsp;&nbsp;&nbsp; /&ast; LocalTokenNumberTable &ast;/&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp; offsetof&lpar;DXE_PCD_DATABASE, Init.@color[red](PcdPlatformBootTimeOut)&lowbar;&ast;<sup>1</sup>&rpar; | PCD_TYPE_DATA | <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PCD_DATUM_TYPE_UINT16,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp;&nbsp; <font color="black">{ 0x3U } </font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&sol;&ast;  <font color="red">PcdPlatformBootTimeOut</font> &lowbar;&ast;<sup>1</sup> [1] &ast;/,<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;</span></p>)
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:35%" align="left"><span style="font-size:0.4250em; font-family:Consolas; " >&nbsp;&nbsp;DXE_PCD_DATABASE_INIT @color[red](gDXEPcdDbInit) = { <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)&nbsp;&nbsp;&nbsp;&nbsp; /&ast; LocalTokenNumberTable &ast;/&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp; offsetof&lpar;DXE_PCD_DATABASE, Init.@color[red](PcdPlatformBootTimeOut)&lowbar;&ast;<sup>1</sup>&rpar; | PCD_TYPE_DATA | <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PCD_DATUM_TYPE_UINT16,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp;&nbsp; <font color="green">{ 0x3U } </font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&sol;&ast;  <font color="red">PcdPlatformBootTimeOut</font> &lowbar;&ast;<sup>1</sup> [1] &ast;/,<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;</span></p>)
 
 @snapend
+
+
+
+@snap[north-west span-100 fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p align="left" style="line-height:60%"><span style="font-size:0.9em; "><br>@color[yellow](Example Module:)</span><span style="font-size:0.5em; ">&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](MdeModulePkg/Universal/PCD/Dxe/Pcd) </span><br>
+<span style="font-size:0.8em; ">@color[#00b0f0](<b>Autogen.c</b>)</span></p>
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:35%" align="left"><span style="font-size:0.4250em; font-family:Consolas; " >&nbsp;&nbsp;DXE_PCD_DATABASE_INIT <span style="background-color: white";>@color[red](gDXEPcdDbInit)</span> = { <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)&nbsp;&nbsp;&nbsp;&nbsp; /&ast; LocalTokenNumberTable &ast;/&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp; offsetof&lpar;DXE_PCD_DATABASE, Init.@color[red](PcdPlatformBootTimeOut)&lowbar;&ast;<sup>1</sup>&rpar; | PCD_TYPE_DATA | <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PCD_DATUM_TYPE_UINT16,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp;&nbsp; <span style="background-color: yellow";><font color="green">{ 0x3U } </font>&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&sol;&ast;  <font color="red">PcdPlatformBootTimeOut</font> &lowbar;&ast;<sup>1</sup> [1] &ast;/,<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;</span></p>)
+
+@snapend
+
 
 @snap[north-east span-100 ]
 <br>
