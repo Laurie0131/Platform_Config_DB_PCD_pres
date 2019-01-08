@@ -758,7 +758,7 @@ Slide says it all
 <br>
 <br>
 <br>@color[yellow](Setting)</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsFixedAtBuild]<br>&nbsp;&nbsp;@color[yellow](IntelFrameworkModulePkg/Universal/BdsDxe/BootMaint/BootMaint.c)<br>&nbsp;&nbsp;PcdSet16 &lpar;@color[red](PcdPlatformBootTimeOut),<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  NewBmmData->BootTimeOut&rpar;;<br>&nbsp;&nbsp;</span></p>)
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsFixedAtBuild]<br>&nbsp;&nbsp;@color[yellow](IntelFrameworkModulePkg/Universal/BdsDxe/BootMaint/BootMaint.c)<br>&nbsp;&nbsp;PcdSet16 &lpar;@color[red](PcdPlatformBootTimeOut),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  NewBmmData->BootTimeOut&lpar;;<br>&nbsp;&nbsp;</span></p>)
 @snapend
 
 
