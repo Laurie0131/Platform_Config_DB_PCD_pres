@@ -392,38 +392,54 @@ Note:
 <br>
 <br>
 <p align="left" style="line-height:80%"><span style="font-size:0.9em; ">PCD defined in the DEC file from any package</span></p>
+```
+[Guids.common]
+PcdTokenSpaceGuidName={ 0xXXXXXXXX, 0xXXXX, 0xXXXX, { 0xXX, . . .}}
+. . .
+[Pcds...]
+PcdTokenSpaceGuidName.PcdTokenName|Value[|DatumType[|MaxSize]]|Token
+
+```
+
+@snapend
+
+@snap[west span-100 fragment]
+<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">PCD usage listed in INF file for module</span></p>
+```
+[…Pcd…] 
+PcdTokenSpaceGuidName.PcdTokenName|[Value]
+
+
+```
+@snapend
+
+@snap[west span-100 fragment]
+<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">Value of PCD set in Platform DSC</span></p>
+```
+[Pcds...]
+PcdTokenSpaceGuidName.PcdTokenName|Value[|DatumType[|MaximumDatumSize]]
+
+```
+@snapend
+
+
+
+Note:
+
+
+
+---?image=/assets/images/slides/Slide21.JPG
+@title[PCD Syntax example]
+### <p align="right"><span class="gold" >PCD Syntax Example</span></p>
+
+@snap[north-west span-100 fragment]
+<br>
+<br>
+<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">PCD defined in the DEC file from any package</span></p>
 @box[bg-black text-white   ](<p align="left" style="line-height:70%"><span style="font-size:0.50em; font-family:Consolas; font-weight: bold;" >[Guids.common]<br>PcdTokenSpaceGuidName={ 0xXXXXXXXX, 0xXXXX, 0xXXXX, { 0xXX, . . .}}<br>. . .<br>[Pcds...]<br>PcdTokenSpaceGuidName.PcdTokenName|Value[|DatumType[|MaxSize]]|Token<br></span></p>)
 <br>
 @snapend
 
-
-@snap[north-west span-100 fragment]
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">PCD usage listed in the INF file for module</span></p>
-@box[bg-black text-white   ](<p align="left" style="line-height:70%"><span style="font-size:0.50em; font-family:Consolas; font-weight: bold;" >[Guids.common]<br>PcdTokenSpaceGuidName={ 0xXXXXXXXX, 0xXXXX, 0xXXXX, { 0xXX, . . .}}<br>. . .<br>[Pcds...]</span></p>)
-<br>
-@snapend
-
-
-@snap[north-west span-100 fragment]
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">Value of PCD set in the Platform DSC</span></p>
-@box[bg-black text-white   ](<p align="left" style="line-height:70%"><span style="font-size:0.50em; font-family:Consolas; font-weight: bold;" >[Guids.common]<br>PcdTokenSpaceGuidName={ 0xXXXXXXXX, 0xXXXX, 0xXXXX, { 0xXX, . . .}}<br>. . .<br>[Pcds...]</span></p>)
-<br>
-@snapend
 
 
 Note:
