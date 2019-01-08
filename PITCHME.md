@@ -392,34 +392,40 @@ Note:
 <br>
 <br>
 <p align="left" style="line-height:80%"><span style="font-size:0.9em; ">PCD defined in the DEC file from any package</span></p>
+<pre>
 ```
-[Guids.common]
-PcdTokenSpaceGuidName={ 0xXXXXXXXX, 0xXXXX, 0xXXXX, { 0xXX, . . .}}
-. . .
-[Pcds...]
-PcdTokenSpaceGuidName.PcdTokenName|Value[|DatumType[|MaxSize]]|Token
+  [Guids.common]
+    PcdTokenSpaceGuidName={ 0xXXXXXXXX, 0xXXXX, 0xXXXX, { 0xXX, . . .}}
+        . . .
+  [Pcds...]
+  PcdTokenSpaceGuidName.PcdTokenName|Value[|DatumType[|MaxSize]]|Token
 
 ```
+</pre>
 
 @snapend
 
 @snap[west span-100 fragment]
 <p align="left" style="line-height:80%"><span style="font-size:0.9em; ">PCD usage listed in INF file for module</span></p>
+<pre>
 ```
-[…Pcd…] 
-PcdTokenSpaceGuidName.PcdTokenName|[Value]
+   […Pcd…] 
+     PcdTokenSpaceGuidName.PcdTokenName|[Value]
 
 
 ```
+</pre>
 @snapend
 
-@snap[west span-100 fragment]
+@snap[south-west span-100 fragment]
 <p align="left" style="line-height:80%"><span style="font-size:0.9em; ">Value of PCD set in Platform DSC</span></p>
+<pre>
 ```
-[Pcds...]
-PcdTokenSpaceGuidName.PcdTokenName|Value[|DatumType[|MaximumDatumSize]]
+  [Pcds...]
+     PcdTokenSpaceGuidName.PcdTokenName|Value[|DatumType[|MaximumDatumSize]]
 
 ```
+</pre>
 @snapend
 
 
