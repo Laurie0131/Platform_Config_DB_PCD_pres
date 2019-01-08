@@ -549,38 +549,37 @@ Note:
 
 
 @snap[north-east span-90 fragment]
-<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">Defined</span></p>
+<p align="left" style="line-height:40%"><span style="font-size:0.9em; "><br>Defined</span></p>
 @box[bg-black text-white my-box-pad2  ](<p style="line-height:30%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsFixedAtBuild, PcdsPatchableInModule]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)|0x400|UINT32|0x30000003<br>&nbsp;&nbsp;</span></p>)
-<br>
 @snapend
 
 @snap[north-east span-90 fragment]
+<p align="left" style="line-height:40%"><span style="font-size:0.9em; ">
 <br>
 <br>
 <br>
 <br>
-<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">Referenced</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:30%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[Pcd]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)  &num;&num; CONSUMES<br>&nbsp;&nbsp;</span></p>)
-<br>
-@snapend
-
-
-@snap[north-east span-90 fragment]
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">Modified</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:30%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsFixedAtBuild]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)|0x@color[green](008400)<br>&nbsp;&nbsp;</span></p>)
-<br>
+<br>Referenced</span></p>
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[Pcd]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)  &num;&num; CONSUMES<br>&nbsp;&nbsp;</span></p>)
 @snapend
 
 
 @snap[north-east span-90 fragment]
+<p align="left" style="line-height:40%"><span style="font-size:0.9em; "><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>Modified</span></p>
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsFixedAtBuild]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)|0x@color[green](008400)<br>&nbsp;&nbsp;</span></p>)
+@snapend
+
+
+@snap[north-east span-90 fragment]
+<p align="left" style="line-height:40%"><span style="font-size:0.9em; "><br>
 <br>
 <br>
 <br>
@@ -593,8 +592,8 @@ Note:
 <br>
 <br>
 <br>
-<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">Used</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:30%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;MdeModulePkg\Universal\Variable\RuntimeDxe\Variable.c  // max NV variable size <br>&nbsp;&nbsp;mVariableModuleGlobal->MaxVariableSize = PcdGet32 (@color[red](PcdMaxVariableSize));<br>&nbsp;&nbsp;</span></p>)
+Used</span></p>
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;MdeModulePkg\Universal\Variable\RuntimeDxe\Variable.c  // max NV variable size <br>&nbsp;&nbsp;mVariableModuleGlobal->MaxVariableSize = PcdGet32 (@color[red](PcdMaxVariableSize));<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
 
