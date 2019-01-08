@@ -1,6 +1,11 @@
 ---?image=assets/images/gitpitch-audience.jpg
 @title[Platform Config DB (PCD)]
-<br><br><br><br><br>
+<br><br><br>
+<span style="font-size:0.75em" >This slide deck has moved to:
+https://gitpitch.com/tianocore-training/Platform_Config_DB_PCD_pres/master#/
+</span>
+
+<br><br>
 ## <span class="gold"   >UEFI & EDK II Training</span>
 
 #### Platform Configuration Database (PCD)
