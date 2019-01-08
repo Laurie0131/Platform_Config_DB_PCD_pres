@@ -838,7 +838,7 @@ Note:
 <br>
 <p align="left" style="line-height:60%"><span style="font-size:0.9em; ">@color[yellow](Example Module:)</span><span style="font-size:0.5em; ">&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](OvmfPkg/Library/PlatformBootManagerLib) </span><br>
 <span style="font-size:0.8em; ">@color[#87E2A9](<b>Autogen.h</b>)</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp;&num;define _PCD_SET_MODE_16_PcdPlatformBootTimeOut&lpar;Value&rpar; \<br>&nbsp;&nbsp; LibPcdSet16&lpar;_PCD_TOKEN_PcdPlatformBootTimeOut, &lpar; @color[red](Value)  &rpar;&rpar;<br>&nbsp;&nbsp;&num;define _PCD_SET_MODE_16_S_PcdPlatformBootTimeOut&lpar;Value&rpar; \<br>&nbsp;&nbsp; LibPcdSet16S&lpar;_PCD_TOKEN_PcdPlatformBootTimeOut, &lpar; @color[red](Value)  &rpar;&rpar;<br>&nbsp;&nbsp;</span></p>)
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.4250em; font-family:Consolas; " >&nbsp;&nbsp;@color[yellow](<sup>...</sup>)<br>&nbsp;&nbsp;&num;define _PCD_SET_MODE_16_PcdPlatformBootTimeOut&lpar;Value&rpar; \<br>&nbsp;&nbsp; LibPcdSet16&lpar;_PCD_TOKEN_PcdPlatformBootTimeOut, &lpar; @color[red](Value)  &rpar;&rpar;<br>&nbsp;&nbsp;&num;define _PCD_SET_MODE_16_S_PcdPlatformBootTimeOut&lpar;Value&rpar; \<br>&nbsp;&nbsp; LibPcdSet16S&lpar;_PCD_TOKEN_PcdPlatformBootTimeOut, &lpar; @color[red](Value)  &rpar;&rpar;<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
 
@@ -851,11 +851,12 @@ Note:
 <br>
 <br>
 <br>
-<p align="left" style="line-height:60%"><span style="font-size:0.9em; ">@color[yellow](Example Module:)</span><span style="font-size:0.5em; ">&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](MdeModulePkg/Universal/PCD/Dxe/Pcd) </span><br>
+<p align="left" style="line-height:60%"><span style="font-size:0.9em; "><br>@color[yellow](Example Module:)</span><span style="font-size:0.5em; ">&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](MdeModulePkg/Universal/PCD/Dxe/Pcd) </span><br>
 <span style="font-size:0.8em; ">@color[#00b0f0](<b>Autogen.c</b>)</span></p>
 @box[bg-black text-white my-box-pad2  ](<p style="line-height:35%" align="left"><span style="font-size:0.4250em; font-family:Consolas; " >&nbsp;&nbsp;DXE_PCD_DATABASE_INIT @color[red](gDXEPcdDbInit) = { <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)&nbsp;&nbsp;&nbsp;&nbsp; /&ast; LocalTokenNumberTable &ast;/&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp; offsetof&lpar;DXE_PCD_DATABASE, Init.@color[red](PcdPlatformBootTimeOut)&lowbar;&ast;<sup>1</sup>&rpar; | PCD_TYPE_DATA | <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PCD_DATUM_TYPE_UINT16,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](...)<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&sol;&ast;  <font color="red">PcdPlatformBootTimeOut</font> &lowbar;&ast;<sup>1</sup> [1] &ast;/,<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;</span></p>)
-@snapend
+<p align="right" style="line-height:60%"><span style="font-size:0.4em; ">&ast;<sup>1</sup> GUID of PCD Variable PcdPlatformBootTimeOut </span></p>
 
+@snapend
 
 
 Note:
