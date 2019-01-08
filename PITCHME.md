@@ -388,7 +388,7 @@ Note:
 @title[PCD Syntax example]
 ### <p align="right"><span class="gold" >PCD Syntax Example</span></p>
 
-@snap[north-west span-100 fragment]
+@snap[north-east span-90 fragment]
 <br>
 <br>
 <p align="left" style="line-height:80%"><span style="font-size:0.9em; ">PCD defined in the DEC file from any package</span></p>
@@ -405,7 +405,7 @@ Note:
 
 @snapend
 
-@snap[west span-100 fragment]
+@snap[east span-90 fragment]
 <p align="left" style="line-height:80%"><span style="font-size:0.9em; ">PCD usage listed in INF file for module</span></p>
 <pre>
 ```
@@ -417,7 +417,7 @@ Note:
 </pre>
 @snapend
 
-@snap[south-west span-100 fragment]
+@snap[south-east span-90 fragment]
 <p align="left" style="line-height:80%"><span style="font-size:0.9em; ">Value of PCD set in Platform DSC</span></p>
 <pre>
 ```
