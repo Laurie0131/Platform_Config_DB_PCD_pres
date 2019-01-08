@@ -685,7 +685,7 @@ Note:
 <br>
 <br>
 <p align="left" style="line-height:80%"><span style="font-size:01.25em; ">@color[#00b0f0](<b>Autogen.c</b>)</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;// Definition of PCDs used in this module<br>&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](• • •) <br>&nbsp;&nbsp;GLOBAL_REMOVE_IF_UNREFERENCED const UINT32  \<br>&nbsp;&nbsp;&nbsp;&nbsp;_gPcd_FixedAtBuild_PcdMaxVariableSize = &lowbar;PCD&lowbar;VALUE&lowbar;&nbsp;<span style="background-color: gray";>@color[red](PcdMaxVariableSize;)&nbsp;&nbsp;</span><br>&nbsp;&nbsp;</span></p>)
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;// Definition of PCDs used in this module<br>&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](• • •) <br>&nbsp;&nbsp;GLOBAL_REMOVE_IF_UNREFERENCED const UINT32  \<br>&nbsp;&nbsp;&nbsp;&nbsp;_gPcd_FixedAtBuild_PcdMaxVariableSize = &lowbar;PCD&lowbar;VALUE&lowbar;<span style="background-color: white";>@color[red](PcdMaxVariableSize;)&nbsp;&nbsp;</span><br>&nbsp;&nbsp;</span></p>)
 
 @snapend
 
