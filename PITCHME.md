@@ -661,7 +661,46 @@ Note:
 
 ---?image=/assets/images/slides/Slide45.JPG
 @title[Fixed PCD AutoGen files]
-<p align="right"><span class="gold" >Fixed PCD AutoGen files</span></p>
+<p align="right"><span class="gold" ><b>Fixed PCD AutoGen files</b></span></p>
+<span style="font-size:0.8em">Example: </span>@fa[github gp-bullet-gold]<span style="font-size:0.5em">&nbsp;&nbsp;<a href="https://github.com/tianocore/edk2/blob/master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmmRuntimeDxe.inf "> MdeModulePkg\Universal\Variable\RuntimeDxe\VariableRuntimeDxe</a> </span>
+
+@snap[north-west span-100 fragment]
+<br>
+<br>
+<br>
+<br>
+<p align="left" style="line-height:80%"><span style="font-size:01.9em; ">@color[#87E2A9](<b>Autogen.h</b>)</span></p>
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;&num;define _PCD_TOKEN_PcdMaxVariableSize  250U<br>&nbsp;&nbsp;&num;define _PCD_SIZE_PcdMaxVariableSize 4<br>&nbsp;&nbsp;&num;define _PCD_GET_MODE_SIZE_PcdMaxVariableSize  _PCD_SIZE_PcdMaxVariableSize <br>&nbsp;&nbsp;&num;define _PCD_VALUE_PcdMaxVariableSize<span style="background-color: yellow";>@color[green](&nbsp;&nbsp;  0x8400U)&nbsp;&nbsp;</span><br>&nbsp;&nbsp;extern const  UINT32  _gPcd_FixedAtBuild_PcdMaxVariableSize;<br>&nbsp;&nbsp;&num;define _PCD_GET_MODE_32_PcdMaxVariableSize  _gPcd_FixedAtBuild_PcdMaxVariableSize<br>&nbsp;&nbsp;</span></p>)
+<br>
+@snapend
+
+@snap[north-west span-100 fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p align="left" style="line-height:80%"><span style="font-size:01.9em; ">@color[#00ffff](<b>Autogen.c</b>)</span></p>
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;// Definition of PCDs used in this module<br>&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](• • •) <br>&nbsp;&nbsp;GLOBAL_REMOVE_IF_UNREFERENCED const UINT32  \<br>&nbsp;&nbsp;&nbsp;&nbsp;_gPcd_FixedAtBuild_PcdMaxVariableSize = _PCD_VALUE_<span style="background-color: yellow";>@color[red](&nbsp;&nbsp;PcdMaxVariableSize;)&nbsp;&nbsp;</span><br>&nbsp;&nbsp;</span></p>)
+
+@snapend
+
+
+Note
+
+---?image=/assets/images/slides/Slide45.JPG
+@title[Fixed PCD AutoGen files]
+<p align="right"><span class="gold" ><b>Fixed PCD AutoGen files</b></span></p>
 <span style="font-size:0.8em">Example: </span>@fa[github gp-bullet-gold]<span style="font-size:0.5em">&nbsp;&nbsp;<a href="https://github.com/tianocore/edk2/blob/master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmmRuntimeDxe.inf "> MdeModulePkg\Universal\Variable\RuntimeDxe\VariableRuntimeDxe</a> </span>
 
 Note:
