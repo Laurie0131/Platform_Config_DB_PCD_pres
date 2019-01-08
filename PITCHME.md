@@ -810,12 +810,6 @@ Slide says it all
 
 
 
-Note:
-
----?image=/assets/images/slides/Slide48.JPG
-<!-- .slide: data-transition="none" -->
-@title[Dynamic PCD]
-### <p align="right"><span class="gold" >Dynamic PCD</span></p>
 
 Note:
 
@@ -833,99 +827,20 @@ Note:
   -    Timeout = PcdGet16 (PcdPlatformBootTimeOut);
 
 
-
-+++?image=/assets/images/slides/Slide49.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Dynamic PCD 02]
-### <p align="right"><span class="gold" >Dynamic PCD</span></p>
-
-Note:
+---
+@title[Dynamic PCD AutoGen files]
+### <p align="right"><span class="gold" >Dynamic PCD AutoGen files</span></p>
 
 
-- Defined in IntelModulePkg Package .DEC
-  - [PcdsDynamic]
-  - 	gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|0xffff|UINT16|0x0x
-- Value to use in OvmfPkgX64 Package .DSC
-  - 	   gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|03
-- NOTE2 Default is accually 0
 
-- /BdsDxe/BootMaint/BootMaint.c
-  -    case FORM_TIME_OUT_ID:
-  -       PcdSet16 (PcdPlatformBootTimeOut, CurrentFakeNVMap->BootTimeOut);
-- OvmfPkg\Library\PlatformBootManagerLib\BdsPlatform.c
-  -    Timeout = PcdGet16 (PcdPlatformBootTimeOut);
-
-
-+++?image=/assets/images/slides/Slide50.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Dynamic PCD 03]
-### <p align="right"><span class="gold" >Dynamic PCD</span></p>
 
 Note:
 
-
-- Defined in IntelModulePkg Package .DEC
-  - [PcdsDynamic]
-  - 	gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|0xffff|UINT16|0x0x
-- Value to use in OvmfPkgX64 Package .DSC
-  - 	   gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|03
-- NOTE2 Default is accually 0
-
-- /BdsDxe/BootMaint/BootMaint.c
-  -    case FORM_TIME_OUT_ID:
-  -       PcdSet16 (PcdPlatformBootTimeOut, CurrentFakeNVMap->BootTimeOut);
-- OvmfPkg\Library\PlatformBootManagerLib\BdsPlatform.c
-  -    Timeout = PcdGet16 (PcdPlatformBootTimeOut);
-
-
-
-+++?image=/assets/images/slides/Slide51.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Dynamic PCD 04]
-### <p align="right"><span class="gold" >Dynamic PCD</span></p>
-
-Note:
-
-
-- Defined in IntelModulePkg Package .DEC
-  - [PcdsDynamic]
-  - 	gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|0xffff|UINT16|0x0x
-- Value to use in OvmfPkgX64 Package .DSC
-  - 	   gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|03
-- NOTE2 Default is accually 0
-
-- /BdsDxe/BootMaint/BootMaint.c
-  -    case FORM_TIME_OUT_ID:
-  -       PcdSet16 (PcdPlatformBootTimeOut, CurrentFakeNVMap->BootTimeOut);
-- OvmfPkg\Library\PlatformBootManagerLib\BdsPlatform.c
-  -    Timeout = PcdGet16 (PcdPlatformBootTimeOut);
-
-
-
-+++?image=/assets/images/slides/Slide52.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Dynamic PCD 05]
-### <p align="right"><span class="gold" >Dynamic PCD</span></p>
-
-Note:
-
-
-- Defined in IntelModulePkg Package .DEC
-  - [PcdsDynamic]
-  - 	gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|0xffff|UINT16|0x0x
-- Value to use in OvmfPkgX64 Package .DSC
-  - 	   gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|03
-- NOTE2 Default is accually 0
-
-- /BdsDxe/BootMaint/BootMaint.c
-  -    case FORM_TIME_OUT_ID:
-  -       PcdSet16 (PcdPlatformBootTimeOut, CurrentFakeNVMap->BootTimeOut);
-- OvmfPkg\Library\PlatformBootManagerLib\BdsPlatform.c
-  -    Timeout = PcdGet16 (PcdPlatformBootTimeOut);
+- The Module that uses the variable only has lib references to get/set the variable
+- The Variable is stored in the PCD Data Base with the Driver for  the PCD manager.
+- Key take away:
+-   PCD act like global variables and they should only be modified at the Project level
+   - Also the AutoGen files do not need to be reviewed since the work is done by the build tools.
 
 
 ---?image=/assets/images/slides/Slide54.JPG
