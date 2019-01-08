@@ -438,11 +438,11 @@ Note:
 @title[PCD Syntax example]
 ### <p align="right"><span class="gold" >PCD Syntax Example</span></p>
 
-@snap[north-west span-100 fragment]
+@snap[north-east span-90 fragment]
 <br>
 <br>
 <p align="left" style="line-height:80%"><span style="font-size:0.9em; ">PCD defined in the DEC file from any package</span></p>
-@box[bg-black text-white   ](<p align="left" style="line-height:70%"><span style="font-size:0.50em; font-family:Consolas; font-weight: bold;" >[Guids.common]<br>PcdTokenSpaceGuidName={ 0xXXXXXXXX, 0xXXXX, 0xXXXX, { 0xXX, . . .}}<br>. . .<br>[Pcds...]<br>PcdTokenSpaceGuidName.PcdTokenName|Value[|DatumType[|MaxSize]]|Token<br></span></p>)
+@box[bg-black text-white my-box-pad  ](<p align="left" style="line-height:70%"><span style="font-size:0.450em; font-family:Consolas; " >[Guids.common]<br>PcdTokenSpaceGuidName={ 0xXXXXXXXX, 0xXXXX, 0xXXXX, { 0xXX, . . .}}<br>. . .<br>[Pcds...]<br>PcdTokenSpaceGuidName.PcdTokenName|Value[|DatumType[|MaxSize]]|Token<br></span></p>)
 <br>
 @snapend
 
