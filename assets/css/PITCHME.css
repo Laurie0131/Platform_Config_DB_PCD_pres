@@ -389,6 +389,6 @@ table#recTable2{width:110%; border:1px solid gray;}
 
 
 .my-box-pad2 #boxed-text{ 
-  padding-top: 0.01em;
+  padding-top: 0.001em;
   padding-bottom: 0.05em;
 }
