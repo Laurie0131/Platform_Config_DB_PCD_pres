@@ -566,6 +566,7 @@ Defined</span></p>
 <br>
 <br>
 <br>
+<br>
 <br>Referenced</span></p>
 @box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[Pcd]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)  &num;&num; CONSUMES<br>&nbsp;&nbsp;</span></p>)
 @snapend
@@ -598,6 +599,8 @@ Defined</span></p>
 <br>
 <br>
 <p align="left" style="line-height:40%"><span style="font-size:0.9em; "><br>
+<br>
+<br>
 <br>
 <br>
 <br>
