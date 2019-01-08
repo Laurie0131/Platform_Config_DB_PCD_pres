@@ -858,6 +858,7 @@ Note:
 @snapend
 
 @snap[south-west span-100 ]
+<br>
 <p align="right" style="line-height:60%"><span style="font-size:0.4em; "><br>&ast;<sup>1</sup> GUID of PCD Variable PcdPlatformBootTimeOut </span></p>
 @snapend
 
