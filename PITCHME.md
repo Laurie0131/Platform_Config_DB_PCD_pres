@@ -557,6 +557,7 @@ Defined</span></p>
 @snapend
 
 @snap[north-east span-90 fragment]
+<br>
 <p align="left" style="line-height:40%"><span style="font-size:0.9em; ">
 <br>
 <br>
@@ -570,6 +571,9 @@ Defined</span></p>
 
 
 @snap[north-east span-90 fragment]
+<br>
+<br>
+<br>
 <p align="left" style="line-height:40%"><span style="font-size:0.9em; "><br>
 <br>
 <br>
@@ -586,6 +590,10 @@ Defined</span></p>
 
 
 @snap[north-east span-90 fragment]
+<br>
+<br>
+<br>
+<br>
 <p align="left" style="line-height:40%"><span style="font-size:0.9em; "><br>
 <br>
 <br>
