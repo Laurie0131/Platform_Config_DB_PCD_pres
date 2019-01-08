@@ -659,7 +659,7 @@ Note:
 
 Note:
 
----?image=/assets/images/slides/Slide45.JPG
+---
 @title[Fixed PCD AutoGen files]
 <p align="right"><span class="gold" ><b>Fixed PCD AutoGen files</b></span></p>
 <span style="font-size:0.8em">Example: </span>@fa[github gp-bullet-gold]<span style="font-size:0.5em">&nbsp;&nbsp;<a href="https://github.com/tianocore/edk2/blob/master/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmmRuntimeDxe.inf "> MdeModulePkg\Universal\Variable\RuntimeDxe\VariableRuntimeDxe</a> </span>
