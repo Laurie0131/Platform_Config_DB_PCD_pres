@@ -549,12 +549,17 @@ Note:
 
 
 @snap[north-east span-90 fragment]
-<p align="left" style="line-height:40%"><span style="font-size:0.9em; "><br>Defined</span></p>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:30%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsFixedAtBuild, PcdsPatchableInModule]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)|0x400|UINT32|0x30000003<br>&nbsp;&nbsp;</span></p>)
+<p align="left" style="line-height:40%"><span style="font-size:0.9em; ">
+<br>
+<br>
+Defined</span></p>
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsFixedAtBuild, PcdsPatchableInModule]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)|0x400|UINT32|0x30000003<br>&nbsp;&nbsp;</span></p>)
 @snapend
 
 @snap[north-east span-90 fragment]
 <p align="left" style="line-height:40%"><span style="font-size:0.9em; ">
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -573,6 +578,8 @@ Note:
 <br>
 <br>
 <br>
+<br>
+<br>
 <br>Modified</span></p>
 @box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsFixedAtBuild]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)|0x@color[green](008400)<br>&nbsp;&nbsp;</span></p>)
 @snapend
@@ -580,6 +587,8 @@ Note:
 
 @snap[north-east span-90 fragment]
 <p align="left" style="line-height:40%"><span style="font-size:0.9em; "><br>
+<br>
+<br>
 <br>
 <br>
 <br>
