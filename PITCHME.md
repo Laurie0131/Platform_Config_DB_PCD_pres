@@ -552,7 +552,7 @@ Note:
 <p align="left" style="line-height:40%"><span style="font-size:0.9em; ">
 <br>
 <br>
-Defined</span></p>
+@color[yellow](Defined)</span></p>
 @box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsFixedAtBuild, PcdsPatchableInModule]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)|0x400|UINT32|0x30000003<br>&nbsp;&nbsp;</span></p>)
 @snapend
 
@@ -567,7 +567,7 @@ Defined</span></p>
 <br>
 <br>
 <br>
-<br>Referenced</span></p>
+<br>@color[yellow](Referenced)</span></p>
 @box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[Pcd]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)  &num;&num; CONSUMES<br>&nbsp;&nbsp;</span></p>)
 @snapend
 
@@ -588,7 +588,7 @@ Defined</span></p>
 <br>
 <br>
 <br>
-<br>Modified</span></p>
+<br>@color[yellow](Modified)</span></p>
 @box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsFixedAtBuild]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)|0x@color[green](008400)<br>&nbsp;&nbsp;</span></p>)
 @snapend
 
@@ -618,12 +618,32 @@ Defined</span></p>
 <br>
 <br>
 <br>
-Used</span></p>
+@color[yellow](Used)</span></p>
 @box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;MdeModulePkg\Universal\Variable\RuntimeDxe\Variable.c  // max NV variable size <br>&nbsp;&nbsp;mVariableModuleGlobal->MaxVariableSize = PcdGet32 (@color[red](PcdMaxVariableSize));<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
 
 
+
+@snap[north-east span-90 fragment]
+<br>
+<br>
+<br>
+<p align="left" style="line-height:40%"><span style="font-size:0.9em; "><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>@color[yellow](Modified)</span></p>
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdsFixedAtBuild]<br>&nbsp;&nbsp;gEfiMdeModulePkgTokenSpaceGuid.@color[red](PcdMaxVariableSize)|<span style="background-color: gray";>0x@color[green](008400)&nbsp;&nbsp;</span><br>&nbsp;&nbsp;</span></p>)
+@snapend
 
 
 Note:
